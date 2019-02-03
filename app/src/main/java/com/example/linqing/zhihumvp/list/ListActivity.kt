@@ -51,7 +51,7 @@ class ListActivity : AppCompatActivity(), ListContract.ListView {
     override fun refreshList() {
         downRefresh()
         setUpLoad()
-        adapter!!.getData(itemBean)
+        adapter!!.getData(this!!.itemBean!!)
         mSwipeRefresh!!.isRefreshing = false
         adapter!!.notifyDataSetChanged()
     }
@@ -86,7 +86,7 @@ class ListActivity : AppCompatActivity(), ListContract.ListView {
                 totalCount = layoutManager.itemCount
                 mLastVisibleItem = (layoutManager as LinearLayoutManager).findLastVisibleItemPosition()
                 if (visibleCount > 0 && newState == RecyclerView.SCROLL_STATE_IDLE && !isLoadData && mLastVisibleItem >= totalCount - 1) {
-                    presenter.getPrevious(itemBean!!.date)
+                    presenter.getPrevious(itemBean!!.date!!)
                 }
             }
 
@@ -96,7 +96,7 @@ class ListActivity : AppCompatActivity(), ListContract.ListView {
 
     //notify data rrfresh when upload
     override fun notifyChange() {
-        adapter!!.refreshPrevious(itemBean!!.stories)
+        adapter!!.refreshPrevious(itemBean!!.stories!!)
         adapter!!.notifyDataSetChanged()
         isLoadData = false
     }
