@@ -16,10 +16,14 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <android.support.v7.widget.Toolbar
-                android:background="?attr/colorPrimary"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fitsSystemWindows="true"
+                android:background="#00bfff"
+                app:title="首页"
+                app:titleTextColor="#ffffff"
+
 
                 android:id="@+id/toolbar"/>
             <android.support.v7.widget.RecyclerView
