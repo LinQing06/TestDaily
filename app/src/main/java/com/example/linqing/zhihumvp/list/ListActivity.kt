@@ -10,7 +10,6 @@ import android.widget.LinearLayout
 
 import com.example.linqing.zhihumvp.R
 import com.example.linqing.zhihumvp.entitybean.ItemBean
-import java.util.Objects
 
 class ListActivity : AppCompatActivity(), ListContract.ListView {
     private var adapter: MyAdapter? = null

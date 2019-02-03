@@ -1,7 +1,6 @@
 package com.example.linqing.zhihumvp.list
 
 import com.example.linqing.zhihumvp.entitybean.ItemBean
-
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

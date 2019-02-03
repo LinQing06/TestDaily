@@ -1,7 +1,5 @@
 package com.example.linqing.zhihumvp.detail
 
-import android.content.Intent
-
 import com.example.linqing.zhihumvp.Sevice.RetrofitService
 import com.example.linqing.zhihumvp.entitybean.ArticleDetailBean
 

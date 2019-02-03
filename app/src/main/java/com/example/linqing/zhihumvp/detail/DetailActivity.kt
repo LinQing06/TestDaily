@@ -1,6 +1,5 @@
 package com.example.linqing.zhihumvp.detail
 
-import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -22,7 +21,7 @@ class DetailActivity : AppCompatActivity(), DetailContract.DetailView {
         setContentView(R.layout.webview)
         val intent = intent
         id = intent.getStringExtra("id")
-        presenterInter.getIdP(id)
+        presenterInter.getIdP(id!!)
 
         init()
 

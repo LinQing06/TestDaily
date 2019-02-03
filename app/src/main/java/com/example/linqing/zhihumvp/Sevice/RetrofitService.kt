@@ -2,7 +2,6 @@ package com.example.linqing.zhihumvp.Sevice
 
 import com.example.linqing.zhihumvp.entitybean.ArticleDetailBean
 import com.example.linqing.zhihumvp.entitybean.ItemBean
-
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
