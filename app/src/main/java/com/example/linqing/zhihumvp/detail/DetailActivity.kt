@@ -42,7 +42,7 @@ class DetailActivity : AppCompatActivity(), DetailContract.DetailView {
         //支持JS
         settings.javaScriptEnabled = true
         //支持插件
-        settings.pluginState = WebSettings.PluginState.ON
+        //settings.pluginState = WebSettings.PluginState.ON
         //设置适应屏幕
         settings.useWideViewPort = true
         settings.loadWithOverviewMode = true
